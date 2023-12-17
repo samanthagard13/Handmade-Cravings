@@ -38,6 +38,7 @@ body {
 
 .image-container {
   position: relative;
+  padding-top: 80px;
 }
 
 .overlay-content {

@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import CustomNav from "../components/Navbar";
 import About from "../components/About";
 import RecentPosts from "../components/RecentPosts";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
+
 function HomePage() {
   return (
     <>
+    <CustomNav/>
       <div className="image-container">
         <Image src="/images/waffles.jpg" fluid />
         <div className="overlay-content">

@@ -1,7 +1,7 @@
 :root {
   line-height: 1.5;
   font-weight: 500;
-
+  font-size: large;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,6 +25,15 @@ body {
 .bars {
   color: black;
   margin-right: 10px;
+}
+
+.nav-link {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.dropdown-menu.show {
+  border: none;
 }
 
 .image-container {
@@ -79,8 +88,7 @@ body {
 }
 
 a {
-  color: black;
-  text-decoration: none;
+  color: rgb(146, 135, 172);
 }
 
 .footer {

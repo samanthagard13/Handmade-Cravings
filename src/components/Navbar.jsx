@@ -36,20 +36,20 @@ function CustomNav() {
               <Nav className="flex-column">
                 
                 <NavDropdown title="Recipes">
-                  <Nav.Link href="#recipes" onClick={handleOffcanvasClose}>
+                  <Nav.Link href="appetizers" onClick={handleOffcanvasClose}>
                     Appetizer
                   </Nav.Link>
-                  <Nav.Link href="#recipes" onClick={handleOffcanvasClose}>
+                  <Nav.Link href="dinners" onClick={handleOffcanvasClose}>
                     Dinner
                   </Nav.Link>
-                  <Nav.Link href="#recipes" onClick={handleOffcanvasClose}>
+                  <Nav.Link href="desserts" onClick={handleOffcanvasClose}>
                     Dessert
                   </Nav.Link>
-                  <Nav.Link href="#recipes" onClick={handleOffcanvasClose}>
+                  <Nav.Link href="drinks" onClick={handleOffcanvasClose}>
                     Drinks
                   </Nav.Link>
                 </NavDropdown>
-                <Nav.Link href="#about" onClick={handleOffcanvasClose}>
+                <Nav.Link href="about" onClick={handleOffcanvasClose}>
                   About
                 </Nav.Link>
                 <Nav.Link>

@@ -8,16 +8,16 @@ function Contact() {
         <>
         <h1 className="m-4 rposts">Send Me A Message</h1>
         <a href="mailto:handmadecravings@yahoo.com">handmadecravings@yahoo.com</a>
-        <Form>
-            <Form.Group>
+        <Form className="p-2">
+            <Form.Group className="p-2">
                 <Form.Label>Name</Form.Label>
                 <Form.Control></Form.Control>
             </Form.Group>
-            <Form.Group>
+            <Form.Group className="p-2">
                 <Form.Label>Email</Form.Label>
                 <Form.Control></Form.Control>
             </Form.Group>
-            <Form.Group>
+            <Form.Group className="p-2">
                 <Form.Label>Message</Form.Label>
                 <Form.Control as="textarea" rows={3}/>
             </Form.Group>

@@ -6,8 +6,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 function Contact() {
     return(
         <>
-        <h1 className="m-4 rposts">Send Me A Message</h1>
-        <a href="mailto:handmadecravings@yahoo.com">handmadecravings@yahoo.com</a>
+        <h2 className="m-4 title">Send Me A Message</h2>
+       
         <Form className="p-2">
             <Form.Group className="p-2">
                 <Form.Label>Name</Form.Label>

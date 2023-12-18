@@ -22,7 +22,7 @@ function CustomNav() {
       <Navbar fixed="top" className="mb-5 bg-white">
         <Container>
           <Navbar.Brand as={Link} to={"/"}>
-            <img src="/images/HandmadeCravings.png" alt="Logo" />
+            Handmade Cravings
           </Navbar.Brand>
 
           <Button className="menu-btn" onClick={handleOffcanvasToggle}>

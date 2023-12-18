@@ -4,7 +4,7 @@ import { Card, Col, Row, Button } from "react-bootstrap";
 function RecentPosts() {
   return (
     <>
-    <h1 className="m-4 rposts">Recent Posts</h1>
+    <h2 className="m-4 titles">Recent Posts</h2>
       <Row xs={1} md={2} className="g-4">
         <Col>
           <Card>

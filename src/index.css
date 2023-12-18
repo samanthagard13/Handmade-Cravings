@@ -17,6 +17,10 @@ body {
   min-height: 100vh;
 }
 
+.navbar-brand {
+  font-size: xx-large;
+}
+
 .menu-btn {
   border: none;
   background: none;
@@ -57,7 +61,7 @@ body {
   margin-top: 15px;
 }
 
-.rposts {
+.titles {
   border-bottom: 1px solid black;
 }
 
@@ -88,8 +92,13 @@ body {
   width: 300px;
 }
 
+.wwa {
+  border-bottom: 1px solid black;
+  padding-top: 100px;
+}
+
 a {
-  color: rgb(146, 135, 172);
+  color: rgb(255, 255, 255);
 }
 
 .footer {

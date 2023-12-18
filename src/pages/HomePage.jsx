@@ -16,8 +16,8 @@ function HomePage() {
       <div className="image-container">
         <Image src="/images/waffles.jpg" fluid />
         <div className="overlay-content">
-          <h1 className="display-3">Crafted By Hand, Craved By You</h1>
-          <h2>Recipes That Inspire Scratch Cooking And Quality Meals</h2>
+          <h1>Crafted By Hand, Craved By You</h1>
+          <h3>Recipes That Inspire Scratch Cooking And Quality Meals</h3>
           <Button className="homepage-btn">What's For Dinner?</Button>
         </div>
       </div>
@@ -26,7 +26,7 @@ function HomePage() {
         <div className="image-container2">
           <Image src="/images/bruschetta.jpeg"/>
           <div className="overlay-content2">
-          <h1 className="display-3">Appetizers For Every Occasion</h1>
+          <h2 className="display-3">Appetizers For Every Occasion</h2>
           
           <Button className="homepage-btn">View Recipes</Button>
         </div>

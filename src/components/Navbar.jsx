@@ -19,7 +19,7 @@ function CustomNav() {
   const handleOffcanvasToggle = () => setShowOffcanvas(!showOffcanvas);
   return (
     <>
-      <Navbar fixed="top" className="mb-5 bg-white">
+      <Navbar className="mt-2 mb-2 bg-white">
         <Container>
           <Navbar.Brand as={Link} to={"/"}>
             Handmade Cravings

@@ -1,18 +1,18 @@
 import React from "react";
-import CustomNav from "../components/Navbar";
+import TopNavbar from "../components/TopNavbar";
 import About from '../components/About';
 import Footer from '../components/Footer';
-import { Card, Image } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 
 function AboutPage() {
     return(
         <>
-        <CustomNav/>
+        <TopNavbar/>
         <h2 className="wwa">What Were About</h2>
         <About/>
         <Card>
-        <Card.Img src="/images/RenderedImage.jpg" fluid/>
+        <Card.Img src="/images/SamG.jpg" className="photo" />
         </Card>
         <Footer/>
         </>

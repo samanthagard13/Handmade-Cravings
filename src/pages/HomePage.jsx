@@ -1,38 +1,40 @@
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
+import { Container, Row, Col } from "react-bootstrap";
+import MainPhoto from "../components/MainPhoto";
 import Button from "react-bootstrap/Button";
-import CustomNav from "../components/Navbar";
+import TopNavbar from "../components/TopNavbar";
 import About from "../components/About";
 import RecentPosts from "../components/RecentPosts";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-
+import HomeComp from "../components/Home-Component";
 
 function HomePage() {
   return (
     <>
-    <CustomNav/>
-      <div className="image-container">
-        <Image src="/images/waffles.jpg" fluid />
-        <div className="overlay-content">
-          <h1>Crafted By Hand, Craved By You</h1>
-          <h3>Recipes That Inspire Scratch Cooking And Quality Meals</h3>
-          <Button className="homepage-btn">What's For Dinner?</Button>
-        </div>
-      </div>
-        <About/>
-        <RecentPosts/>
-        <div className="image-container2">
-          <Image src="/images/bruschetta.jpeg"/>
-          <div className="overlay-content2">
-          <h2 className="display-3">Appetizers For Every Occasion</h2>
+      <TopNavbar />
+      <Container fluid>
+      
+
+        <Row lg={12} md={12} sm={12}>
           
-          <Button className="homepage-btn">View Recipes</Button>
-        </div>
-        </div>
-        <Contact/>
-        <Footer/>
+            <MainPhoto />
+          
+        </Row>
+        <Row lg={12} md={12} sm={12}>
+          <About />
+        </Row>
+        <Row lg={12} md={12} sm={12}>
+          <RecentPosts />
+        </Row>
+        <Row lg={12} md={12} sm={12} >
+          <HomeComp />
+        </Row>
+        <Contact />
+        <Row>
+          <Footer />
+        </Row>
+      </Container>
     </>
   );
 }

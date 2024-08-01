@@ -11,7 +11,7 @@ function Footer() {
         <p>
         <a href="mailto:handmadecravings@yahoo.com">handmadecravings@yahoo.com</a>
         </p>
-        <p className="p-2 m-0">© HandmadeCravings 2023</p>
+        <p className="p-2 m-0">© HandmadeCravings 2024</p>
        
         </div>
         </>

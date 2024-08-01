@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import CustomNav from "../components/Navbar";
+import TopNavbar from "../components/TopNavbar";
 import Footer from "../components/Footer";
 
 function DinnerPage() {
     return(
         <>
-        <CustomNav/>
+        <TopNavbar/>
 
         <Footer/>
         </>

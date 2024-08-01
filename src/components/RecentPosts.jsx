@@ -4,42 +4,42 @@ import { Card, Col, Row, Button } from "react-bootstrap";
 function RecentPosts() {
   return (
     <>
-    <h2 className="m-4 titles">Recent Posts</h2>
-      <Row xs={1} md={2} className="g-4">
-        <Col>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+    <h1 className="card-title">Recent Posts</h1>
+      <Row >
+        <Col lg={6}>
+          <Card className="recent-posts">
+            <Card.Img className="card-img" src="/images/recent1.jpg" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>Spicy Ginger Chicken and Green Beans</Card.Title>
+              <Button className="all-btn">Get The Recipe</Button>
             </Card.Body>
-            <Button className="all-btn">Get The Recipe</Button>
           </Card>
         </Col>
-        <Col>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+        <Col lg={6}>
+          <Card className="recent-posts">
+            <Card.Img className="card-img" src="/images/recent2.jpg" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>Roasted Red Pepper and Tomato Soup</Card.Title>
             </Card.Body>
             <Button className="all-btn">Get The Recipe</Button>
           </Card>
         </Col>
       </Row>
-      <Row xs={1} md={2} className="g-4 mt-2">
-        <Col>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+      <Row>
+        <Col lg={6}>
+          <Card className="recent-posts">
+            <Card.Img className="card-img" src="/images/recent3.jpg" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>Fresh Pasta Sauce</Card.Title>
             </Card.Body>
             <Button className="all-btn">Get The Recipe</Button>
           </Card>
         </Col>
-        <Col>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+        <Col lg={6}>
+          <Card className="recent-posts">
+            <Card.Img className="card-img" src="/images/recent5.jpg" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>The Perfect Fried Egg</Card.Title>
             </Card.Body>
             <Button className="all-btn">Get The Recipe</Button>
           </Card>

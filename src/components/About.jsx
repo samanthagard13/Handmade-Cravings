@@ -3,7 +3,7 @@ import React from "react";
 function About() {
     return(
         <>
-        <p className="m-4">
+        <p className="about">
           Discover a collection of recipes that serve as a source of inspiration
           for those passionate about scratch cooking and creating delicious,
           high-quality meals. These recipes are designed to ignite your culinary

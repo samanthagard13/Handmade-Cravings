@@ -8,7 +8,7 @@ function Contact() {
         <>
         <h2 className="m-4 title">Send Me A Message</h2>
        
-        <Form className="p-2">
+        <Form className="p-2 contact-form">
             <Form.Group className="p-2">
                 <Form.Label>Name</Form.Label>
                 <Form.Control></Form.Control>

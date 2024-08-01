@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faPinterest } from "@fortawesome/free-brands-svg-icons";
 
-function CustomNav() {
+function TopNavbar() {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
 
   const handleOffcanvasClose = () => setShowOffcanvas(false);
@@ -36,6 +36,9 @@ function CustomNav() {
             <Offcanvas.Header closeButton></Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="flex-column">
+              <Nav.Link href="/" onClick={handleOffcanvasClose}>
+                  Home
+                </Nav.Link>
                 <NavDropdown title="Recipes">
                   <Nav.Link href="appetizers" onClick={handleOffcanvasClose}>
                     Appetizers
@@ -65,4 +68,4 @@ function CustomNav() {
   );
 }
 
-export default CustomNav;
+export default TopNavbar;

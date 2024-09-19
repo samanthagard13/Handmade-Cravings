@@ -1,3 +1,18 @@
+/* General Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+#root {
+  margin: 0;
+  text-align: center;
+  margin: 0;
+}
+
 :root {
   line-height: 1.5;
   font-weight: 500;
@@ -13,22 +28,37 @@ body {
   margin: auto;
   display: flex;
   place-items: center;
+  flex-direction: column;
 }
 
-/* nav */
-
+/* Navbar */
 .navbar-brand {
-  font-size: 2em;
-}
-
-.dropdown-menu.show {
-  border: none;
+  font-size: 2.5em;
 }
 
 .menu-btn {
   border: none;
   background: none;
   font-size: 2em;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.menu-btn:hover {
+  background: none;
+}
+
+.menu-btn:active {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu-btn:focus {
+  outline: none;
 }
 
 .bars {
@@ -36,13 +66,12 @@ body {
   margin-right: 10px;
 }
 
-/* home */
-
+/* hero image */
 .main-photo {
   background-image: url('/images/flower-waffles.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50em;
+  height: 30em;
 }
 
 .overlay-content {
@@ -52,11 +81,11 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  width: 80em;
+  width: 80%;
 }
 
 .photo-title {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 .photo-body {
@@ -69,31 +98,64 @@ body {
   border-radius: 5px;
   margin: auto;
   margin-top: 1em;
-  width: 10em;
+  width: 100%;
+  max-width: 10em;
   padding: 10px;
   font-size: 2em;
 }
 
-.about {
-  font-size: 25px;
-  padding: 2em;
+/* about paragraph */
+
+.about{
+padding: 20px;
+font-size: x-large;
 }
 
-.all-btn {
-  background-color: rgb(107, 93, 139);
-  border: none;
-  width: 10em;
+/* recent post cards */
+.recent-posts {
+  box-shadow: 5px 5px 15px gray;
+  margin: 25px auto;
+  width: 100%;
+  max-width: 41em;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
   margin: auto;
-  margin-bottom: 20px;
-  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.card-img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.recent-title {
+  font-size: 2.5em;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.card-title {
   font-size: 30px;
 }
+
+/* second hero image */
 
 .image-container2 {
   background-image: url('/images/bruschetta1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40em;
+  height: 25em;
+}
+
+.hero2 {
+  font-size: 3em;
 }
 
 .overlay-content2 {
@@ -106,44 +168,45 @@ body {
   width: 80em;
 }
 
-.recent-posts {
-  border: none;
-  box-shadow: 5px 5px 15px gray;
-  margin: 25px;
-}
-
-.card-img {
-  height: 28em;
-  width: 41em;
-  margin: auto;
-  margin-top: 3em;
-}
-
-.card-title {
+/* contact form */
+.msg {
   font-size: 2em;
-}
-
-.title {
-  font-size: 35px;
   padding: 5px;
+  text-align: center;
 }
 
 .contact-form {
-  margin: 1em;
-}
-
-.form-label {
-  font-size: 25px;
+  margin: 1em auto;
+  padding: 1em;
+  /* max-width: 800px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-control {
-  width: 50%;
-  margin: auto;
+  width: 25em;
+  max-width: 500px;
+  margin: 0.5em;
 }
+
+/* every button but top hero */
+.all-btn {
+  background-color: rgb(107, 93, 139);
+  border: none;
+  width: 10em;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+/* footer */
 
 .footer {
   background-color: rgb(146, 135, 172);
   color: white;
+  font-size: 1.5em;
 }
 
 a {
@@ -152,9 +215,191 @@ a {
 
 
 
-@media (max-width: 500px) {
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5em;
+  }
 
+  .menu-btn {
+    font-size: 1.5em;
+  }
 
+  .main-photo {
+    height: 20em;
+  }
 
+  .photo-title {
+    font-size: 2em;
+  }
+
+  .photo-body {
+    font-size: 1.5em;
+  }
+
+  .homepage-btn {
+    font-size: 1.5em;
+    width: 100%;
+    max-width: 10em;
+  }
+
+  .about {
+    font-size: 1em;
+    padding: 1em;
+  }
+
+  .recent-posts {
+    box-shadow: 5px 5px 15px gray;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 41em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .row {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .recent-title {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+
+  .all-btn {
+    font-size: 1em;
+  }
+
+  .image-container2 {
+    height: 15em;
+  }
+
+  .hero2 {
+    font-size: 2em;
+  }
+
+  .msg {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .navbar-brand {
+    font-size: 1em;
+    margin-left: 4em;
+  }
+
+  .menu-btn {
+    font-size: 1em;
+    margin-right: 4em;
+  }
+
+  .main-photo {
+    height: 30em;
+  }
+
+  .photo-title {
+    font-size: 2em;
+  }
+
+  .photo-body {
+    font-size: 1.5em;
+  }
+
+  .homepage-btn {
+    font-size: 1em;
+    width: 100%;
+    max-width: 10em;
+  }
+
+  .about {
+    font-size: 14px;
+    padding: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .recent-posts {
+    box-shadow: 5px 5px 15px gray;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 20em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .row {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .recent-title {
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+
+  .all-btn {
+    font-size: 14px;
+  }
+
+  .image-container2 {
+    height: 15em;
+  }
+
+  .hero2 {
+    font-size: 1em;
+  }
+
+  .msg {
+    font-size: 1em;
+    padding: 3px;
+    text-align: center;
+  }
+  
+  .contact-form {
+    margin: 1em auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 1em;;
+  }
 }

@@ -24,7 +24,7 @@ function HomePage() {
         <Row lg={12} md={12} sm={12}>
           <About />
         </Row>
-        <Row lg={12} md={12} sm={12}>
+        <Row>
           <RecentPosts />
         </Row>
         <Row lg={12} md={12} sm={12} >

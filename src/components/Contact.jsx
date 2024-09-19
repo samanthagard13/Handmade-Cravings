@@ -6,10 +6,10 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 function Contact() {
     return(
         <>
-        <h2 className="m-4 title">Send Me A Message</h2>
+        <h2 className="m-4 msg">Send Me A Message</h2>
        
         <Form className="p-2 contact-form">
-            <Form.Group className="p-2">
+            <Form.Group className="p-2 form-group">
                 <Form.Label>Name</Form.Label>
                 <Form.Control></Form.Control>
             </Form.Group>

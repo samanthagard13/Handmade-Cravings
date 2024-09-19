@@ -6,8 +6,8 @@ function HomeComp() {
         <>
         <Card className="image-container2">
           <Card.Body className="overlay-content2">
-            <h1 className="display-3">Appetizers For Every Occasion</h1>
-            <Button className="homepage-btn" href="appetizers">
+            <h1 className="hero2">Appetizers For Every Occasion</h1>
+            <Button className="all-btn" href="appetizers">
               View Recipes
             </Button>
           </Card.Body>

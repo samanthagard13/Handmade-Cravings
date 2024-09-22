@@ -11,9 +11,7 @@ function AboutPage() {
         <TopNavbar/>
         <h2 className="wwa">What Were About</h2>
         <About/>
-        <Card>
-        <Card.Img src="/images/SamG.jpg" className="photo" />
-        </Card>
+        
         <Footer/>
         </>
     )

@@ -53,9 +53,9 @@ function TopNavbar() {
                     Drinks
                   </Nav.Link>
                 </NavDropdown>
-                <Nav.Link href="about" onClick={handleOffcanvasClose}>
+                {/* <Nav.Link href="about" onClick={handleOffcanvasClose}>
                   About
-                </Nav.Link>
+                </Nav.Link> */}
                 <Nav.Link>
                   <FontAwesomeIcon icon={faPinterest} />
                 </Nav.Link>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import MainPhoto from "../components/MainPhoto";
-import Button from "react-bootstrap/Button";
+import MainPhoto from "../components/MainPhoto"
 import TopNavbar from "../components/TopNavbar";
 import About from "../components/About";
 import RecentPosts from "../components/RecentPosts";
@@ -31,10 +30,8 @@ function HomePage() {
           <HomeComp />
         </Row>
         <Contact />
-        <Row>
-          <Footer />
-        </Row>
       </Container>
+      <Footer />
     </>
   );
 }

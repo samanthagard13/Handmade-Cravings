@@ -66,6 +66,15 @@ body {
   margin-right: 10px;
 }
 
+.dropdown-menu.show {
+  border: none;
+  margin-left: 15px;
+}
+
+.nav-link {
+  margin-left: 5px;
+}
+
 /* hero image */
 .main-photo {
   background-image: url('/images/flower-waffles.jpg');
@@ -102,6 +111,8 @@ body {
   max-width: 10em;
   padding: 10px;
   font-size: 2em;
+  text-decoration: none;
+  
 }
 
 /* about paragraph */
@@ -214,6 +225,31 @@ a {
 }
 
 
+/* recipe card lists */
+
+.recipe-card {
+  box-shadow: 5px 5px 15px gray;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 25em;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-card-img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.recipe-card-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 15px;
+}
 
 
 /* Responsive Styles */
@@ -296,6 +332,32 @@ a {
 
   .msg {
     font-size: 1.5em;
+  }
+
+  /* recipe card lists */
+
+  .recipe-card {
+    box-shadow: 5px 5px 15px gray;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 17em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .recipe-card-img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .recipe-card-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 8px;
   }
 }
 

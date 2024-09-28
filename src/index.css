@@ -77,10 +77,10 @@ body {
 
 /* hero image */
 .main-photo {
-  background-image: url('/images/flower-waffles.jpg');
+  background-image: url('/images/breakfasts/flower-waffles.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 30em;
+  height: 35em;
 }
 
 .overlay-content {
@@ -113,6 +113,14 @@ body {
   font-size: 2em;
   text-decoration: none;
   
+}
+
+.homepage-btn:hover {
+  background-color:  rgb(89, 77, 116);
+}
+
+.homepage-btn:active {
+  background-color:  rgb(89, 77, 116) !important;
 }
 
 /* about paragraph */
@@ -159,7 +167,7 @@ font-size: x-large;
 /* second hero image */
 
 .image-container2 {
-  background-image: url('/images/bruschetta1.jpg');
+  background-image: url('/images/appetizers/bruschetta-banner.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 25em;
@@ -212,6 +220,14 @@ font-size: x-large;
   font-size: 1.5em;
 }
 
+.all-btn:hover {
+  background-color:  rgb(89, 77, 116);
+}
+
+.all-btn:active {
+  background-color:  rgb(89, 77, 116) !important; 
+}
+
 /* footer */
 
 .footer {
@@ -251,6 +267,11 @@ a {
   margin-top: 15px;
 }
 
+/* Recipe Page */
+
+.instruction-list {
+  text-align: left;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {

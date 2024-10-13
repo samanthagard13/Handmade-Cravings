@@ -10,9 +10,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
-  .catch(err => console.error('Connection error', err));
+  .catch((err) => console.error('Connection error', err));
 
 app.get('/', (req, res) => {
   res.send('Welcome to Handmade Cravings');
@@ -20,11 +20,14 @@ app.get('/', (req, res) => {
 
 app.get('/api/Handmade-Cravings/Appetizers', async (req, res) => {
   try {
-      const recipes = await Recipe.find();
-      res.json(recipes);
+    const recipes = await Recipe.find({ category: 'Appetizers' });
+    if (recipes.length === 0) {
+      return res.status(404).json({ message: 'No appetizers found' });
+    }
+    res.json(recipes);
   } catch (err) {
-      console.error('Error fetching app recipes:', err);
-      res.status(500).send('Server error');
+    console.error('Error fetching appetizers:', err);
+    res.status(500).send('Server error');
   }
 });
 
@@ -41,16 +44,26 @@ app.get('/api/Handmade-Cravings/Appetizers/:id', async (req, res) => {
   }
 });
 
-
-app.get('/api/Handmade-Cravings/Dinners', async (req, res) => {
+app.get("/api/Handmade-Cravings/Dinners", async (req, res) => {
   try {
+    console.log("Fetching dinners...");
+
     const recipes = await Recipe.find({ category: 'Dinners' });
+
+    console.log("Fetched dinners:", recipes);  // Log what is fetched
+
+    if (recipes.length === 0) {
+      console.log("No dinners found");
+      return res.status(404).json({ message: 'No dinners found' });
+    }
+
     res.json(recipes);
   } catch (err) {
-    console.error('Error fetching dinner recipes:', err);
-    res.status(500).send('Server error');
+    console.error('Error fetching dinners:', err);
+    return res.status(500).json({ message: "Error fetching dinners", error: err });
   }
 });
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

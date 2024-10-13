@@ -21,6 +21,7 @@ function RecipePage() {
         }
         const data = await response.json();
         setRecipe(data);
+        console.log(data)
       } catch (error) {
         console.error("Error fetching the recipe:", error);
         setError(error.message);

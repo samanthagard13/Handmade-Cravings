@@ -1,0 +1,25 @@
+{
+    "category": "Appetizers",
+    "name": "Bruschetta",
+    "ingredients": [
+        "8 Roma tomatoes, diced",
+        "1/4 Cup fresh basil, chopped",
+        "2 to 4 cloves garlic, minced (depending on preference)",
+        "1 Tablespoon balsamic vinegar",
+        "1/4 Cup olive oil, divided",
+        "1/4 Teaspoon salt",
+        "1/4 Teaspoon pepper",
+        "1/4 Cup Parmesan cheese, grated",
+        "1 Loaf Italian bread (or any bread you prefer for texture)"
+    ],
+    "instructions": [
+        "Preheat your oven to 350°F (175°C).",
+        "Slice the bread about 1/2 inch thick and drizzle with 2 Tablespoons of the olive oil.",
+        "Toast the bread in the oven until golden brown.",
+        "In a large bowl, combine the diced tomatoes, basil, and garlic.",
+        "Add the balsamic vinegar, the remaining olive oil, salt, and pepper, and mix thoroughly.",
+        "Spoon the tomato mixture evenly onto each slice of toasted bread.",
+        "Sprinkle with grated Parmesan and serve immediately."
+    ],
+    "image_url": "images/appetizers/bruschetta.jpg"
+}

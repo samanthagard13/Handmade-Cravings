@@ -1,0 +1,21 @@
+{
+    "category": "Appetizers",
+    "name": "Salad with Apple Cider Vinaigrette",
+    "ingredients": [
+        "6 Cups mixed greens",
+        "1 Apple, thinly sliced",
+        "1/4 Cup walnuts, chopped",
+        "1/4 Cup feta cheese",
+        "2 Tablespoons apple cider vinegar",
+        "1 Tablespoon Dijon mustard",
+        "1 Tablespoon honey",
+        "1/4 Cup olive oil",
+        "Salt and pepper to taste"
+    ],
+    "instructions": [
+        "In a small bowl, whisk together the apple cider vinegar, Dijon mustard, honey, olive oil, salt, and pepper.",
+        "In a large salad bowl, toss the mixed greens, apple slices, walnuts, and feta cheese.",
+        "Drizzle the vinaigrette over the salad just before serving."
+    ],
+    "image_url": "images/appetizers/salad_apple_cider_vinaigrette.jpg"
+}

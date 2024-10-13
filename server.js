@@ -7,15 +7,12 @@ import Recipe from './models/Recipe.js';
 dotenv.config();
 const app = express();
 
-// Middleware
-app.use(cors({ origin: 'http://localhost:5173' }));
-
+app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB (Local)
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
-  .catch((err) => console.error('Connection error', err));
+  .catch(err => console.error('Connection error', err));
 
 app.get('/', (req, res) => {
   res.send('Welcome to Handmade Cravings');
@@ -45,7 +42,7 @@ app.get('/api/Handmade-Cravings/Appetizers/:id', async (req, res) => {
 });
 
 
-app.get('/Handmade-Cravings/Dinners', async (req, res) => {
+app.get('/api/Handmade-Cravings/Dinners', async (req, res) => {
   try {
     const recipes = await Recipe.find({ category: 'Dinners' });
     res.json(recipes);

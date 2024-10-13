@@ -1,0 +1,27 @@
+{
+    "category": "Appetizers",
+    "name": "Tomato Soup",
+    "ingredients": [
+        "1 Tablespoon olive oil",
+        "1 Onion, diced",
+        "2 Garlic cloves, minced",
+        "6 Large tomatoes, chopped",
+        "3 Cups vegetable broth",
+        "1/2 Teaspoon sugar",
+        "1/2 Teaspoon salt",
+        "1/4 Teaspoon pepper",
+        "1/4 Cup heavy cream",
+        "Fresh basil for garnish"
+    ],
+    "instructions": [
+        "Heat olive oil in a large pot over medium heat.",
+        "Add the diced onion and garlic, sauté until soft.",
+        "Add the chopped tomatoes and cook until they break down, about 10 minutes.",
+        "Stir in the vegetable broth, sugar, salt, and pepper.",
+        "Bring to a boil, then reduce heat and simmer for 20 minutes.",
+        "Blend the soup until smooth using an immersion blender.",
+        "Stir in the heavy cream and simmer for another 5 minutes.",
+        "Garnish with fresh basil and serve."
+    ],
+    "image_url": "images/appetizers/tomato_soup.jpg"
+}

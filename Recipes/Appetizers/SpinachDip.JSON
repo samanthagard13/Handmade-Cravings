@@ -1,0 +1,23 @@
+{
+    "category": "Appetizers",
+    "name": "Spinach Artichoke Dip",
+    "ingredients": [
+        "1 Cup frozen spinach, thawed and drained",
+        "1 Cup artichoke hearts, chopped",
+        "1/2 Cup sour cream",
+        "1/4 Cup mayonnaise",
+        "1/2 Cup cream cheese, softened",
+        "1/4 Cup grated Parmesan cheese",
+        "1/4 Cup shredded mozzarella",
+        "1/4 Teaspoon garlic powder",
+        "Salt and pepper to taste"
+    ],
+    "instructions": [
+        "Preheat the oven to 375°F (190°C).",
+        "Mix all the ingredients in a large bowl until well combined.",
+        "Transfer the mixture to a small baking dish.",
+        "Bake for 20 minutes, or until the top is golden and bubbly.",
+        "Serve warm with chips, crackers, or bread."
+    ],
+    "image_url": "images/appetizers/spinach_artichoke_dip.jpg"
+}

@@ -1,0 +1,19 @@
+{
+    "category": "Appetizers",
+    "name": "Sweet and Savory Goat Cheese Bites",
+    "ingredients": [
+        "8 Ounces goat cheese",
+        "1/4 Cup honey",
+        "1/4 Cup walnuts, chopped",
+        "1/4 Cup dried cranberries",
+        "1 Tablespoon fresh thyme leaves",
+        "Crackers or toasted baguette slices for serving"
+    ],
+    "instructions": [
+        "Form the goat cheese into small bite-sized balls.",
+        "Roll each cheese ball in chopped walnuts and dried cranberries.",
+        "Drizzle with honey and sprinkle with fresh thyme leaves.",
+        "Serve with crackers or toasted baguette slices."
+    ],
+    "image_url": "images/appetizers/goat_cheese_bites.jpg"
+}

@@ -1,0 +1,21 @@
+{
+    "category": "Appetizers",
+    "name": "Stuffed Mushrooms",
+    "ingredients": [
+        "16 Button mushrooms",
+        "1/2 Cup cream cheese, softened",
+        "1/4 Cup grated Parmesan cheese",
+        "1/4 Cup breadcrumbs",
+        "2 Garlic cloves, minced",
+        "2 Tablespoons fresh parsley, chopped",
+        "Salt and pepper to taste"
+    ],
+    "instructions": [
+        "Preheat the oven to 375°F (190°C).",
+        "Remove the stems from the mushrooms and hollow out the caps.",
+        "In a small bowl, mix cream cheese, Parmesan, breadcrumbs, garlic, parsley, salt, and pepper.",
+        "Stuff each mushroom cap with the mixture.",
+        "Bake for 15-20 minutes, or until the mushrooms are tender and the filling is golden."
+    ],
+    "image_url": "images/appetizers/stuffed_mushrooms.jpg"
+}

@@ -1,0 +1,22 @@
+{
+    "category": "Appetizers",
+    "name": "Zucchini Fritters",
+    "ingredients": [
+        "2 Zucchinis, grated",
+        "1 Egg, beaten",
+        "1/4 Cup flour",
+        "1/4 Cup grated Parmesan cheese",
+        "1/2 Teaspoon garlic powder",
+        "Salt and pepper to taste",
+        "Olive oil for frying"
+    ],
+    "instructions": [
+        "Squeeze excess water out of the grated zucchini.",
+        "In a large bowl, mix the zucchini, egg, flour, Parmesan, garlic powder, salt, and pepper.",
+        "Heat olive oil in a pan over medium heat.",
+        "Spoon small amounts of the mixture into the pan and flatten with a spatula.",
+        "Fry until golden brown on both sides, about 3 minutes per side.",
+        "Drain on paper towels and serve warm."
+    ],
+    "image_url": "images/appetizers/zucchini_fritters.jpg"
+}

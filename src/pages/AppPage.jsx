@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Spinner, Alert } from "react-bootstrap";
 import TopNavbar from "../components/TopNavbar";
 import Footer from "../components/Footer";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 function AppPage() {
   const [recipes, setRecipes] = useState([]);
@@ -13,15 +14,13 @@ function AppPage() {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/Handmade-Cravings/Appetizers');
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        setRecipes(data);
+        const API_URL = process.env.REACT_APP_API_URL;
+        console.log("API URL:", API_URL);
+        const response = await axios.get(`${API_URL}/api/Handmade-Cravings/Appetizers`);
+        setRecipes(response.data);
       } catch (error) {
         console.error('Error fetching app recipes:', error);
-        setError(error.message); 
+        setError(error.message);
       } finally {
         setLoading(false);
       }
@@ -29,6 +28,7 @@ function AppPage() {
 
     fetchRecipes();
   }, []);
+
 
   if (loading) {
     return (

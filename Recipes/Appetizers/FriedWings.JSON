@@ -1,0 +1,23 @@
+{
+    "category": "Appetizers",
+    "name": "Fried Chicken Wings",
+    "ingredients": [
+        "2 Pounds chicken wings",
+        "1 Cup buttermilk",
+        "1 Cup flour",
+        "1 Teaspoon paprika",
+        "1 Teaspoon garlic powder",
+        "1/2 Teaspoon cayenne pepper",
+        "Salt and pepper to taste",
+        "Oil for frying"
+    ],
+    "instructions": [
+        "In a large bowl, marinate the chicken wings in buttermilk for at least 30 minutes.",
+        "In another bowl, mix the flour, paprika, garlic powder, cayenne pepper, salt, and pepper.",
+        "Heat oil in a deep fryer or large pot to 375°F (190°C).",
+        "Dredge the wings in the flour mixture, shaking off excess.",
+        "Fry the wings in batches until golden and crispy, about 8-10 minutes.",
+        "Drain on paper towels and serve hot."
+    ],
+    "image_url": "images/appetizers/fried_chicken_wings.jpg"
+}

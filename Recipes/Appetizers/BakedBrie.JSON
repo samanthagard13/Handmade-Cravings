@@ -1,0 +1,17 @@
+{
+    "category": "Appetizers",
+    "name": "Baked Brie with Honey and Pecans",
+    "ingredients": [
+        "1 Wheel of brie",
+        "1/4 Cup honey",
+        "1/4 Cup pecans, chopped",
+        "Crackers or sliced baguette for serving"
+    ],
+    "instructions": [
+        "Preheat the oven to 350°F (175°C).",
+        "Place the brie on a baking sheet and bake for 10 minutes, or until soft.",
+        "Remove from the oven and drizzle with honey.",
+        "Sprinkle with chopped pecans and serve with crackers or sliced baguette."
+    ],
+    "image_url": "images/appetizers/baked_brie.jpg"
+}

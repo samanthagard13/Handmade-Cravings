@@ -4,6 +4,7 @@ import TopNavbar from "../components/TopNavbar";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 
+
 function AppPage() {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -13,9 +14,8 @@ function AppPage() {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch(
-          "http://localhost:3000/api/Handmade-Cravings/Appetizers"
-        );
+        const apiUrl = process.env.REACT_APP_API_URL;
+        const response = await fetch(`${apiUrl}/api/Handmade-Cravings/Appetizers`);
         console.log("Response status:", response.status);
         if (!response.ok) {
           throw new Error("Network response was not ok");

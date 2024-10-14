@@ -17,6 +17,7 @@ function TopNavbar() {
 
   const handleOffcanvasClose = () => setShowOffcanvas(false);
   const handleOffcanvasToggle = () => setShowOffcanvas(!showOffcanvas);
+
   return (
     <>
       <Navbar className="mt-2 mb-2 bg-white">
@@ -36,26 +37,42 @@ function TopNavbar() {
             <Offcanvas.Header closeButton></Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="flex-column">
-              <Nav.Link href="/" onClick={handleOffcanvasClose}>
+                <Link to="/" onClick={handleOffcanvasClose} className="nav-link">
                   Home
-                </Nav.Link>
+                </Link>
                 <NavDropdown title="Recipes">
-                  <Nav.Link href="appetizers" onClick={handleOffcanvasClose}>
+                  <Link
+                    to={"/appetizers"}
+                    onClick={handleOffcanvasClose}
+                    className="dropdown-item"
+                  >
                     Appetizers
-                  </Nav.Link>
-                  <Nav.Link href="dinners" onClick={handleOffcanvasClose}>
+                  </Link>
+                  <Link
+                    to={"/dinners"}
+                    onClick={handleOffcanvasClose}
+                    className="dropdown-item"
+                  >
                     Dinners
-                  </Nav.Link>
-                  <Nav.Link href="desserts" onClick={handleOffcanvasClose}>
+                  </Link>
+                  <Link
+                    to={"/desserts"}
+                    onClick={handleOffcanvasClose}
+                    className="dropdown-item"
+                  >
                     Desserts
-                  </Nav.Link>
-                  <Nav.Link href="drinks" onClick={handleOffcanvasClose}>
+                  </Link>
+                  <Link
+                    to={"/drinks"}
+                    onClick={handleOffcanvasClose}
+                    className="dropdown-item"
+                  >
                     Drinks
-                  </Nav.Link>
+                  </Link>
                 </NavDropdown>
-                {/* <Nav.Link href="about" onClick={handleOffcanvasClose}>
+                {/* <Link to="/about" onClick={handleOffcanvasClose} className="nav-link">
                   About
-                </Nav.Link> */}
+                </Link> */}
                 <Nav.Link>
                   <FontAwesomeIcon icon={faPinterest} />
                 </Nav.Link>

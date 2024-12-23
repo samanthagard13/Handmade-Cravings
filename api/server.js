@@ -8,7 +8,7 @@ app.use(express.json());
 
 // MongoDB connection
 mongoose
-  .connect(process.env.MONGODB_URI, {
+  .connect(process.env.REACT_APP_MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

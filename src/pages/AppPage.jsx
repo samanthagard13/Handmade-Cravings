@@ -13,8 +13,8 @@ function AppPage() {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
-        const response = await fetch(`${API_URL}/api/appetizers`);
+        const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";  // Fallback to localhost for dev
+        const response = await fetch(`${API_URL}api/appetizers`);
         
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

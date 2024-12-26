@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import NavRoutes from './Routes'; // Assuming this handles routing
-
+import NavRoutes from './Routes';
 function App() {
   return (
     <>

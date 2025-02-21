@@ -22,7 +22,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use(express.json());
+
 
 const MONGO_URI = process.env.MONGODB_URI;
 

@@ -1,83 +1,31 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Card, Spinner, Alert } from "react-bootstrap";
-import TopNavbar from "../components/TopNavbar";
-import Footer from "../components/Footer";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
-function AppPage() {
-  const [recipes, setRecipes] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const navigate = useNavigate();
+export default function Appetizers() {
+  const [appetizers, setAppetizers] = useState([]);
 
   useEffect(() => {
-    const fetchRecipes = async () => {
-      try {
-        const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";  // Fallback to localhost for dev
-        const response = await fetch(`${API_URL}api/appetizers`);
-        
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        setRecipes(data);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchRecipes();
+    fetch("/api/recipes/appetizers")
+      .then((res) => res.json())
+      .then((data) => setAppetizers(data));
   }, []);
 
-  if (loading) {
-    return (
-      <div className="text-center my-5">
-        <Spinner animation="border" role="status" />
-        <span>Loading...</span>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <Alert variant="danger" className="text-center my-5">
-        There was an error fetching the recipes: {error}
-      </Alert>
-    );
-  }
-
   return (
-    <>
-      <TopNavbar />
-      <Container fluid className="my-4">
-        <Row>
-          {recipes.map((recipe) => (
-            <Col key={recipe._id} sm={6} md={4} lg={3} className="mb-4">
-              <Card
-                className="recipe-card"
-                onClick={() => navigate(`/recipe/${recipe._id}`)}
-                style={{ cursor: "pointer" }}
-              >
-                <Card.Img
-                  className="recipe-card-img"
-                  src={recipe.image_url}
-                  alt={recipe.name}
-                  style={{ height: "200px", objectFit: "cover" }}
-                />
-                <Card.Body>
-                  <Card.Title className="text-center">{recipe.name}</Card.Title>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-      <Footer />
-    </>
+    <div>
+      <h1>Appetizer Recipes</h1>
+      {appetizers.length > 0 ? (
+        appetizers.map((recipe) => (
+          <div key={recipe._id}>
+            <h2>{recipe.name}</h2>
+            <p>{recipe.description}</p>
+            <Link href={`/recipe/${recipe._id}`}>
+              <button>View Recipe</button>
+            </Link>
+          </div>
+        ))
+      ) : (
+        <p>Loading...</p>
+      )}
+    </div>
   );
 }
-
-export default AppPage;

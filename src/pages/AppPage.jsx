@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-export default function Appetizers() {
+export default function AppPage() {
   const [appetizers, setAppetizers] = useState([]);
 
   useEffect(() => {
@@ -29,3 +29,4 @@ export default function Appetizers() {
     </div>
   );
 }
+

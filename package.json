@@ -24,6 +24,8 @@
     "express": "^4.21.1",
     "mongodb": "^6.13.1",
     "mongoose": "^8.8.3",
+    "next": "^15.1.7",
+    "node": "^18.20.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
